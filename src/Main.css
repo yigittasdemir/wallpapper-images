@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+* {
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px 0px;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+body header {
+  background-color: #fff;
+  width: 100%;
+}
+
+body header .logo img {
+  width: 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+body header nav {
+  padding: 10px 20px;
+  width: 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header nav li {
+  font-size: 18px;
+}
+
+body header nav li a {
+  color: black;
+}
+
+body .container {
+  padding: 40px 0px;
+  width: 100%;
+}
+
+body .container .wallpappers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .container .wallpappers .card {
+  margin: 10px 20px;
+}
+
+body .container .wallpappers .card img {
+  width: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media screen and (max-width: 480px) {
+  body .container .wallpappers .card img {
+    width: 640px;
+  }
+}
+
+body .container .wallpappers .card .download {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px 0px;
+  padding: 10px 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  text-align: center;
+}
+
+body .container .wallpappers .card .download p {
+  margin: 0px 10px;
+}
+/*# sourceMappingURL=Main.css.map */

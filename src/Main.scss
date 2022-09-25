@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import 'media-queries';
+*{
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+a{
+    color: black;
+}
+h1{
+    text-align: center;
+    padding: 10px 0px;
+}
+body{
+    background-color: rgb(242, 242, 242);
+    header{
+        background-color: #fff;
+        width: 100%;
+        .logo{
+            img{
+                width: 60px;
+                object-fit: contain;
+            }
+        }
+        nav{
+            padding: 10px 20px;
+            width: 80%;
+            align-items: center;   
+            margin: 0 auto;
+            justify-content: space-between;
+            display: flex;
+            li{
+                font-size: 18px;
+                a{
+                    color: black;
+                }
+            }
+        }
+    }
+    .container{
+        padding: 40px 0px;
+        width: 100%;     
+        .wallpappers{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;    
+            .card{
+                margin: 10px 20px;
+                img{
+                    width: 300px;
+                    object-fit: contain;
+                    @include mobile{
+                        width: 640px;
+                    }
+                }
+                .download{
+                    background-color: #fff;
+                    display: flex;
+                    margin: 5px 0px;
+                    padding: 10px 0px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 5px;
+                    text-align: center;
+                    p{
+                        margin: 0px 10px;
+                    }
+                }
+            }
+        }
+    }
+}
